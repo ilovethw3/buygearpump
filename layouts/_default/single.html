@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <article>
+          {{/* ===== h1 修复：SEO 要求每页只能有一个 h1 ===== */}}
+          <h1 class="h2">{{ .Title }}</h1>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item"><i class="ti-pencil-alt text-primary mr-2"></i> By {{ .Params.Author }}</li>
+            <li class="list-inline-item"><i class="ti-calendar text-primary mr-2"></i>
+              {{ .PublishDate.Format "02 Jan, 2006" }}</li>
+          </ul>
+          {{ partial "image.html" (dict "Src" .Params.Image "Alt" .Title "Class" "img-fluid w-100 mb-4") }}
+          <div class="content">
+            {{.Content}}
+          </div>
+        </article>
+
+        {{/* ===== 上一篇 / 下一篇导航 ===== */}}
+        {{ if or .PrevInSection .NextInSection }}
+        <nav class="post-nav mt-5 pt-4 border-top d-flex justify-content-between">
+          {{ if .NextInSection }}
+          <div class="post-nav-prev" style="max-width: 45%;">
+            <span class="d-block text-muted small mb-1"><i class="ti-arrow-left mr-1"></i> Prev</span>
+            <a href="{{ .NextInSection.Permalink }}" class="font-weight-medium text-color">
+              {{ .NextInSection.Title | truncate 50 }}
+            </a>
+          </div>
+          {{ else }}
+          <div></div>
+          {{ end }}
+
+          {{ if .PrevInSection }}
+          <div class="post-nav-next text-right" style="max-width: 45%;">
+            <span class="d-block text-muted small mb-1">Next <i class="ti-arrow-right ml-1"></i></span>
+            <a href="{{ .PrevInSection.Permalink }}" class="font-weight-medium text-color">
+              {{ .PrevInSection.Title | truncate 50 }}
+            </a>
+          </div>
+          {{ else }}
+          <div></div>
+          {{ end }}
+        </nav>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}
