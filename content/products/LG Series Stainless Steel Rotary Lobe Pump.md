@@ -4,15 +4,19 @@ date: 2025-04-23T11:22:16+06:00
 draft: false
 
 # meta description
-description : "LG Series Stainless Steel Rotary Lobe Pump1"
+description : "The LG Series Stainless Steel Rotary Lobe Pump offers oil-free, low-pulsation, and highly efficient transfer for food, chemical, and strict-purity applications."
 
 # product Price
 showPrice: false
-price: "20.00"
-priceBefore: "25.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
-shortDescription: "LG Series Stainless Steel Rotary Lobe Pump2"
+shortDescription: |
+  Experience uncompromised purity and reliability with the **LG Series Stainless Steel Rotary Lobe Pump**. Engineered for rigorous industrial demands, it features:
+  - **100% Oil-Free Transfer:** Ideal for food-grade and chemical applications.
+  - **Low Noise & Pulsation:** Optimized three-lobe rotor design ensures smooth, quiet operation.
+  - **High Efficiency:** Superior machining guarantees continuous, stable performance with minimal maintenance.
 
 #product ID
 productID: "2"
