@@ -21,7 +21,11 @@
         {{ if site.Params.rating.enable }}
         <div class="rw-ui-container"></div>
         {{ end }}
-        {{ if ne .Params.showPrice false }}
+        {{ if eq .Params.showPrice false }}
+        <div class="my-4">
+          <a href="{{ "contact" | absLangURL }}" class="btn btn-primary">{{ i18n "contact_for_quote" | default "Contact us for a quote" }}</a>
+        </div>
+        {{ else }}
         <div class="my-4">
           {{ if .Params.PriceBefore }}
           <s>{{ site.Params.currencySymbol }}{{ .Params.PriceBefore }}</s>
@@ -39,10 +43,13 @@
             <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
               aria-controls="description" aria-selected="true">Description</a>
           </li>
+          <!-- 
+          隐藏review界面
           <li class="nav-item">
             <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
               aria-selected="false">Reviews</a>
           </li>
+          -->
         </ul>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">

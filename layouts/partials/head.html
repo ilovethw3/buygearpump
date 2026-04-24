@@ -70,4 +70,12 @@
   {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+
+  <!-- Custom styles -->
+  <style>
+    /* 产品只有一张图时，隐藏缩略图导航列表 */
+    .product-slider .slick-dots li:only-child {
+      display: none;
+    }
+  </style>
 </head>
