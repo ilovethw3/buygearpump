@@ -43,6 +43,149 @@
 {{ end }}
 <!-- /banner -->
 
+<!-- hero slider -->
+{{ if site.Data.homepage.slider.enable }}
+{{ with site.Data.homepage.slider }}
+<section class="hero-slider p-0">
+  <div class="hero-slider-wrap">
+    {{ range .sliderItem }}
+    <div class="hero-slide">
+      <div class="hero-slide-img">
+        {{ partial "image.html" (dict "Src" .image "Alt" .title "Class" "hero-slide-bg-img") }}
+      </div>
+      <div class="hero-slide-overlay"></div>
+      <div class="container hero-slide-inner">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-7 col-md-9">
+            <div class="hero-slide-content">
+              <h1 class="hero-slide-title">{{ .title | markdownify }}</h1>
+              <p class="hero-slide-desc">{{ .content | markdownify }}</p>
+              {{ if .button.enable }}
+              {{ with .button }}
+              <a href="{{ .link }}" class="btn btn-primary btn-lg hero-slide-btn">{{ .label }}</a>
+              {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+<style>
+.hero-slider { position: relative; overflow: hidden; }
+.hero-slider-wrap .hero-slide {
+  position: relative;
+  height: 580px;
+  overflow: hidden;
+}
+.hero-slide-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-slide-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.hero-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(10,25,50,0.72) 0%, rgba(10,25,50,0.35) 60%, transparent 100%);
+  z-index: 1;
+}
+.hero-slide-inner {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.hero-slide-content { position: relative; }
+.hero-slide-title {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.hero-slide-desc {
+  color: rgba(255,255,255,0.88);
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+  max-width: 560px;
+}
+.hero-slide-btn { padding: .75rem 2rem; font-size: 1rem; }
+
+/* slick dots & arrows */
+.hero-slider-wrap .slick-dots {
+  position: absolute;
+  bottom: 22px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0; margin: 0;
+  z-index: 10;
+}
+.hero-slider-wrap .slick-dots li { display: inline-block; margin: 0 5px; }
+.hero-slider-wrap .slick-dots li button {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none; font-size: 0; cursor: pointer;
+  transition: background .3s;
+}
+.hero-slider-wrap .slick-dots li.slick-active button { background: #fff; }
+.hero-slider-wrap .slick-prev,
+.hero-slider-wrap .slick-next {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  z-index: 10;
+  width: 46px; height: 46px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  transition: background .3s;
+}
+.hero-slider-wrap .slick-prev:hover,
+.hero-slider-wrap .slick-next:hover { background: rgba(255,255,255,0.35); }
+.hero-slider-wrap .slick-prev { left: 24px; }
+.hero-slider-wrap .slick-next { right: 24px; }
+.hero-slider-wrap .slick-prev::before { content: "‹"; font-size: 28px; color: #fff; line-height: 1; }
+.hero-slider-wrap .slick-next::before { content: "›"; font-size: 28px; color: #fff; line-height: 1; }
+@media (max-width: 768px) {
+  .hero-slide { height: 380px; }
+  .hero-slide-title { font-size: 1.6rem; }
+  .hero-slide-desc { font-size: .95rem; }
+}
+</style>
+<script>
+window.addEventListener('load', function(){
+  $('.hero-slider-wrap').slick({
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 700,
+    fade: false,
+    cssEase: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+    pauseOnHover: true,
+    infinite: true
+  });
+});
+</script>
+{{ end }}
+{{ end }}
+<!-- /hero slider -->
+
 <!-- about -->
 {{ if site.Data.homepage.about.enable }}
 {{ with site.Data.homepage.about }}

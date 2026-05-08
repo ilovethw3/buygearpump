@@ -90,21 +90,22 @@ link = "plugins/google-map/gmap.js"
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Professional gear pump manufacturer in China, offering high-quality gear pumps for various industries."
+author = "Botou Sheng'ao Fluid Equipment"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-mapLatitude = "51.5223477"
-mapLongitude = "-0.1622023"
+mapLatitude = "38.156528"
+mapLongitude = "116.491861"
 mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalyticsID = "" # Your ID
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+mobile = "+86 18622392864"
+whatsapp = "+86 18622392864"
+email = "sale@buygearpump.com"
+location = "Botou City, Cangzhou, Hebei Province, China"
 # copyright
-copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
+copyright = "Copyright © 2026 Botou Sheng'ao Fluid Equipment"
 # Snipcart Credentials
 snipcartApiKey = ""
 currencySymbol = "$"
@@ -123,26 +124,26 @@ websiteID = "444334"
 publicKey = "811cf0927332bf51f2e12f84608594ac"
 
 # Social Site
-[[params.social]]
-icon = "ti-facebook"
-link = "#"
+# [[params.social]]
+# icon = "ti-facebook"
+# link = "#"
 
-[[params.social]]
-icon = "ti-twitter-alt"
-link = "#"
+# [[params.social]]
+# icon = "ti-twitter-alt"
+# link = "#"
 
-[[params.social]]
-icon = "ti-youtube"
-link = "#"
+# [[params.social]]
+# icon = "ti-youtube"
+# link = "#"
 
-[[params.social]]
-icon = "ti-instagram"
-link = "#"
+# [[params.social]]
+# icon = "ti-instagram"
+# link = "#"
 
-[[params.social]]
-icon = "ti-pinterest"
-link = "#"
+# [[params.social]]
+# icon = "ti-pinterest"
+# link = "#"
 
 # Contact Form
 [params.contact]
-formAction = "#" # contact form works with formspree.io
+formAction = "https://formspree.io/f/mzdoayvd"

@@ -5,32 +5,29 @@ draft: false
 description : "this is a meta description"
 ---
 
-### Terms and Condition
+### 1. General Terms
+By accessing and using the BuyGearPump website, you agree to be bound by these Terms and Conditions. These terms govern your use of our website and the purchase of our industrial gear pumps and related equipment. If you do not agree with any part of these terms, please do not use our website.
 
-Please read this terms and conditions stated below, which outline a lot of legal goodies, but the bottom line is it’s our aim to always take care of both of us, as a customer, or as a seller. We’ve included many of these terms to legally protect ourselves, but if you have an issue, always feel free to email us at contact@themefisher.com and we’ll do our best to resolve it in a fair and timely way .
+### 2. Products and Specifications
+BuyGearPump specializes in industrial gear pumps, melt pumps, and related extrusion equipment. We strive to ensure that all product descriptions, specifications, and images are as accurate as possible. However, we reserve the right to modify product specifications without prior notice as part of our continuous improvement process. Please confirm critical specifications with our engineering team before placing an order.
 
-### Product Buy & delivery policy
+### 3. Pricing and Quotations
+Due to the custom and industrial nature of our equipment, prices listed on the website (if any) are for reference only. Official pricing will be provided via a formal quotation upon request. All quotations are valid for the period specified in the document. Prices do not include international shipping, customs duties, or local taxes unless explicitly stated.
 
-1)All payments are processed securely through PayPal or Stripe. Themefisher does not directly process payments through the website. So any kind of Problem if you face Themefisher will Not Take any responsibility.
+### 4. Orders and Payment
+All orders are subject to acceptance by BuyGearPump. We accept payments via bank transfer (T/T), Letter of Credit (L/C), or other agreed-upon secure payment methods for international trade. Manufacturing and order processing will commence only after the agreed deposit or full payment has been received and confirmed.
 
-### Product Buy & delivery policy
+### 5. Shipping and Delivery
+We ship our industrial pumps globally. Delivery times are estimates based on production schedules and shipping logistics. BuyGearPump is not liable for delays caused by customs clearance, force majeure, or third-party freight forwarders. Risk of loss and title for items purchased pass to you upon our delivery to the carrier (FOB/CIF as agreed).
 
-Please read this terms and conditions stated below, which outline a lot of legal goodies, but the bottom line is it’s our aim to always take care of both of us, as a customer, or as a seller. We’ve included many of these terms to legally protect ourselves, but if you have an issue, always feel free to email us at contact@themefisher.com and we’ll do our best to resolve it in a fair and timely way .
+### 6. Warranty and Returns
+Our gear pumps are covered by a standard manufacturer's warranty against defects in materials and workmanship, typically for 12 months from the date of shipment (unless otherwise specified in your contract). This warranty does not cover damage resulting from improper installation, misuse, or normal wear and tear. Due to the industrial nature of our products, returns are generally not accepted unless the equipment is proven defective upon arrival.
 
-### Refund Policy
+### 7. Intellectual Property
+All content on this website, including text, graphics, logos, product manuals, and technical drawings, is the property of BuyGearPump and is protected by international copyright laws. You may not reproduce, distribute, or use our materials for commercial purposes without explicit written permission.
 
-1) Since Themefisher is offering non-tangible and irrevocable digital products, we do NOT issue refunds after a purchase is made. If there is a problem with one of the digital download products or if you experience any difficulty with the download, we will fix the problem.
-2) You have 24 hours to inspect your purchase and to determine if it does not meet with the expectations laid forth by The Themefisher. In the event that you wish to receive a refund, Themefisher will issue you a refund and ask you to specify how the product failed to live up to expectations.
-3) When you make a qualifying return, We’ll credit the full amount, less the handling charges. Refunds are generally processed within 3–5 business days after we receive your claim and find it eligible for a return. Refunds are applied to the original payment option.
+### 8. Limitation of Liability
+In no event shall BuyGearPump be liable for any direct, indirect, incidental, or consequential damages arising out of the use or inability to use our products or website. This includes, but is not limited to, loss of production, loss of profits, or equipment downtime.
 
-### Support Policy
-1) Since Themefisher is offering non-tangible and irrevocable digital products, we do NOT issue refunds after a purchase is made. If there is a problem with one of the digital download products or if you experience any difficulty with the download, we will fix the problem.
-2) You have 24 hours to inspect your purchase and to determine if it does not meet with the expectations laid forth by The Themefisher. In the event that you wish to receive a refund, Themefisher will issue you a refund and ask you to specify how the product failed to live up to expectations.
-3) When you make a qualifying return, We’ll credit the full amount, less the handling charges. Refunds are generally processed within 3–5 business days after we receive your claim and find it eligible for a return. Refunds are applied to the original payment option.
-
-### Why We Support:
-
-1. Support covers getting up and help in theme setup
-2. Help using features and theme options
-3. Bug fixes – if you discovered a bug in the theme/Template we will fix it
-4. Functionality which does not work as advertised
+### 9. Contact Information
+If you have any questions or require further clarification regarding these Terms & Conditions, please contact us through our Contact page.
