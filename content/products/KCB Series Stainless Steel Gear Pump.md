@@ -1,5 +1,6 @@
 ---
 title: "KCB Series Stainless Steel Gear Pump"
+slug: "kcb-stainless-steel-gear-pump"
 date: 2026-04-29T16:30:00+08:00
 draft: false
 
@@ -33,7 +34,7 @@ The KCB Series Stainless Steel Gear Pump is a precision-engineered external gear
 
 The pump operates on the proven external gear meshing principle. A matched pair of precision gears—one driving, one driven—divide the casing into a suction chamber and a discharge chamber. As the gears rotate and teeth disengage on the suction side, a local vacuum draws fluid into the tooth valleys. The fluid is carried around the pump housing and discharged at high pressure as the teeth re-engage on the outlet side, producing a continuous, smooth, and pulsation-low flow.
 
-### Features & Advantages
+## Features & Advantages
 
 The KCB Series Stainless Steel Gear Pump is constructed from a pump casing, front and rear covers, precision-machined stainless steel gear pair, drive and driven shafts, replaceable sleeve bearings, a safety valve, and shaft end seals. All wetted components in contact with the process fluid are manufactured from stainless steel, eliminating any risk of iron contamination and providing resistance to mild chemical attack. *(Note: This pump relies on the process fluid for internal bearing lubrication. Only fluids with sufficient lubricating properties—viscosity ≥ 5 cSt—are suitable. Non-lubricating aqueous solutions, pure water, or strongly corrosive media are not compatible.)* The standard shaft rotation is **clockwise when viewed from the external (drive) end of the main shaft**.
 

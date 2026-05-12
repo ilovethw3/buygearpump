@@ -78,4 +78,22 @@
       display: none;
     }
   </style>
+  {{/* ===== JSON-LD Product Schema ===== */}}
+  {{ if eq .Type "products" }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "{{ .Title }}",
+    "image": [
+      {{ range $index, $element := .Params.Images }}{{ if $index }},{{ end }}"{{ $element.image | absURL }}"{{ end }}
+    ],
+    "description": "{{ with .Params.shortDescription }}{{ . | plainify | chomp }}{{ else }}{{ with .Description }}{{ . | plainify | chomp }}{{ end }}{{ end }}",
+    "brand": {
+      "@type": "Brand",
+      "name": "{{ site.Title }}"
+    }
+  }
+  </script>
+  {{ end }}
 </head>

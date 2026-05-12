@@ -112,6 +112,7 @@
       "img-fluid",
       "justify-content-around",
       "justify-content-between",
+      "lead",
       "list-inline",
       "list-inline-item",
       "list-unstyled",
@@ -247,7 +248,9 @@
       "name",
       "navigation",
       "operation--maintenance-guidelines",
-      "reviews"
+      "reviews",
+      "typical-applications",
+      "working-principle-and-structure"
     ]
   }
 }

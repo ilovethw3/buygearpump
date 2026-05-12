@@ -15,7 +15,6 @@
           </a>
           <div class="card-body">
             <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-            <p>{{ .Params.Description }}</p>
             {{ if ne .Params.showPrice false }}
             <div class="mb-4">
               {{ if .Params.PriceBefore }}
