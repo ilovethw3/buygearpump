@@ -1,7 +1,7 @@
 ---
 title: "Gear Oil Pump Technical Features Explained: Design Advantages and Applications"
 slug: "gear-oil-pump-technical-features-explained-design-advantages-and-applications"
-date: 2025-10-17T11:22:16+06:00
+date: 2025-12-17T11:22:16+06:00
 draft: false
 description : "Gear oil pumps are widely used in industrial fluid transfer, particularly for high-viscosity media. Among them, the NYP gear oil pump series is known for its innovative design and ease of maintenance. In this article, we’ll explore the technical features of gear oil pumps, especially the NYP series, and their broad range of industrial applications."
 image: "images/blog/post-2.jpg"
