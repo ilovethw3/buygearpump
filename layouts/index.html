@@ -210,35 +210,105 @@ window.addEventListener('load', function(){
 {{ partial "cta.html" . }}
 {{ end }}
 
-<!-- material -->
+<!-- ordering process -->
 {{ if site.Data.homepage.material.enable }}
 {{ with site.Data.homepage.material }}
-<section class="section pb-0">
+<section class="section pb-0 ordering-process-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 mx-auto text-center">
+      <div class="col-lg-8 mx-auto text-center mb-5">
         <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .subtitle | markdownify }}</p>
+        <p class="text-muted">{{ .subtitle | markdownify }}</p>
       </div>
     </div>
-    <div class="row">
-      {{ range .materialItem }}
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card border-0 text-center">
-          {{ partial "image.html" (dict "Src" .image "Alt" "material" "Class" "card-img-top border-0") }}
-          <div class="card-body">
-            <h4>{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
+    <div class="row justify-content-center">
+      {{ $total := len .materialItem }}
+      {{ range $index, $item := .materialItem }}
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="process-step text-center">
+          <div class="process-step-number">
+            <span>{{ add $index 1 }}</span>
           </div>
+          <div class="process-step-icon">
+            <i class="{{ $item.icon }}"></i>
+          </div>
+          <h5 class="process-step-title">{{ $item.title | markdownify }}</h5>
+          <p class="process-step-desc">{{ $item.content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
+<style>
+.ordering-process-section {
+  background: linear-gradient(180deg, #f8fafe 0%, #ffffff 100%);
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.process-step {
+  position: relative;
+  padding: 20px 10px;
+  transition: transform 0.3s ease;
+}
+.process-step:hover {
+  transform: translateY(-6px);
+}
+.process-step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 14px rgba(26, 115, 232, 0.35);
+}
+.process-step-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e3edf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  transition: all 0.3s ease;
+}
+.process-step:hover .process-step-icon {
+  border-color: #1a73e8;
+  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.18);
+}
+.process-step-icon i {
+  font-size: 1.8rem;
+  color: #1a73e8;
+}
+.process-step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+.process-step-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .ordering-process-section { padding-top: 50px; }
+  .process-step-icon { width: 60px; height: 60px; }
+  .process-step-icon i { font-size: 1.5rem; }
+}
+</style>
 {{ end }}
 {{ end }}
-<!-- /material -->
+<!-- /ordering process -->
 
 <!-- advantage -->
 {{ if site.Data.homepage.advantage.enable }}

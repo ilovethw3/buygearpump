@@ -66,32 +66,51 @@ cta:
     label : "All Products"
     link : "products/"
 
-######################## raw material #######################
+######################## Ordering Process #####################
 material:
-  enable : false
-  title : "Ingredients Of Our Products"
-  subtitle : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dol."
+  enable : true
+  title : "How to Order"
+  subtitle : "Follow these simple steps to get your custom gear pump solution. From consultation to delivery, we ensure a smooth and transparent process."
   materialItem:
-    # material item loop
-    - title : "Matcha Seeds"
-      image : "images/material/material-1.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Aloe Vera"
-      image : "images/material/material-2.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Turmeric"
-      image : "images/material/material-3.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Tulshi leaf"
-      image : "images/material/material-4.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+    # Step 1
+    - title : "Consult Our Team"
+      icon : "ti-comments"
+      content : "Contact our sales team to discuss your specific pumping requirements and customization needs."
+
+    # Step 2
+    - title : "Provide Specifications"
+      icon : "ti-clipboard"
+      content : "Share the quantity, specifications, and material requirements for your desired pump products."
+
+    # Step 3
+    - title : "Receive Quotation"
+      icon : "ti-money"
+      content : "We provide a detailed quotation for your review. Negotiate terms until both parties are satisfied."
+
+    # Step 4
+    - title : "Place Order & Pay"
+      icon : "ti-shopping-cart"
+      content : "Confirm your order and complete the payment to initiate the production process."
+
+    # Step 5
+    - title : "Design & Engineering"
+      icon : "ti-pencil-alt"
+      content : "Our engineering team creates detailed design drawings and production plans for your order."
+
+    # Step 6
+    - title : "Confirm the Plan"
+      icon : "ti-check-box"
+      content : "Review and approve the design plan. We proceed only after your full confirmation."
+
+    # Step 7
+    - title : "Production"
+      icon : "ti-settings"
+      content : "Once confirmed, your order goes into full production with strict quality control at every stage."
+
+    # Step 8
+    - title : "Shipping & Delivery"
+      icon : "ti-truck"
+      content : "Products are carefully packaged and shipped. We provide tracking until successful delivery."
 
 ########################### Advantage #########################
 advantage:
